@@ -3,8 +3,7 @@ public class Patient extends Human{
 
 
     public Patient(int age, String name, String note) {
+        super(age, name);
         this.note = note;
-        this.age = age;
-        this.name = name;
     }
 }

@@ -1,7 +1,8 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class Main {//9
-    public static void drawAllDeliveries(Schedule schedule){
+    public static void drawAllDeliveries(Schedule schedule){//1234567890
         for (Delivery delivery1 : schedule.deliveries) {
             System.out.println("Пациенту " + delivery1.patient.name);
             System.out.println("доставить " + delivery1.drug.milligrames + " миллиграммов" );
@@ -11,8 +12,8 @@ public class Main {//9
         }
     }
     public static void main(String[] args) {
-        Schedule schedule = new Schedule();
-        schedule.deliveries = new ArrayList<>();
+        Schedule schedule = new Schedule(new ArrayList<>());
+
 
 
 
@@ -26,5 +27,14 @@ public class Main {//9
 
         drawAllDeliveries(schedule);
 
+        List<Interface> list = new ArrayList<>();
+
+
+        list.add(pat1);
+        list.add(drug1);
+
+        for (Interface item : list) {
+            item.say();
+        }
     }
 }

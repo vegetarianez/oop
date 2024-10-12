@@ -1,5 +1,9 @@
 import java.util.ArrayList;
 
 public class Schedule {
-    public ArrayList<Delivery> deliveries;
+    ArrayList<Delivery> deliveries;
+
+    public Schedule(ArrayList<Delivery> deliveries) {
+        this.deliveries = deliveries;
+    }
 }
