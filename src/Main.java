@@ -11,13 +11,16 @@ public class Main {//9
             System.out.println();
         }
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) throws NullNameException {
         Schedule schedule = new Schedule(new ArrayList<>());
 
 
 
 
         Patient pat1 = new Patient(54, "Alex", "allergic to eggs");
+        TestAge.test(pat1);
+        TestName.test(pat1);
+
         Drug drug1 = new Drug("aspirin", 1000);
 
 
