@@ -1,5 +1,8 @@
+package model;
+
+import exeption.NullNameException;
+
 import java.util.ArrayList;
-import java.util.List;
 
 public class Main {//9
     public static void drawAllDeliveries(Schedule schedule){//1234567890
@@ -18,26 +21,24 @@ public class Main {//9
 
 
         Patient pat1 = new Patient(54, "Alex", "allergic to eggs");
-        TestAge.test(pat1);
-        TestName.test(pat1);
 
-        Drug drug1 = new Drug("aspirin", 1000);
-
-
-        Delivery delivery = new Delivery("01.01.2025", pat1, drug1);
-
-        schedule.deliveries.add(delivery);
-
-        drawAllDeliveries(schedule);
-
-        List<Interface> list = new ArrayList<>();
-
-
-        list.add(pat1);
-        list.add(drug1);
-
-        for (Interface item : list) {
-            item.say();
-        }
+//        model.Drug drug1 = new model.Drug("aspirin", 1000);
+//
+//
+//        model.Delivery delivery = new model.Delivery("01.01.2025", pat1, drug1);
+//
+//        schedule.deliveries.add(delivery);
+//
+//        drawAllDeliveries(schedule);
+//
+//        List<model.Interface> list = new ArrayList<>();
+//
+//
+//        list.add(pat1);
+//        list.add(drug1);
+//
+//        for (model.Interface item : list) {
+//            item.say();
+//        }
     }
 }
