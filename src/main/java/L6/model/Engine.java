@@ -32,8 +32,12 @@ public class Engine implements Comparable<Engine> {
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj) return true;
-        if (!(obj instanceof Engine)) return false;
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof Engine)) {
+            return false;
+        }
         Engine engine = (Engine) obj;
         return horsepower == engine.horsepower && Double.compare(engine.capacity, capacity) == 0 && Objects.equals(type, engine.type);
     }
@@ -42,7 +46,7 @@ public class Engine implements Comparable<Engine> {
     public int hashCode() {
         int result = type.hashCode();
         result = (int) (31 * result + horsepower + capacity);
-        return Objects.hash(result);
+        return result;
     }
 
 }
