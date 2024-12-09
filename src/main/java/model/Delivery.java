@@ -1,3 +1,5 @@
+package model;
+
 public class Delivery {
     String date;
     Patient patient;

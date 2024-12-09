@@ -1,4 +1,6 @@
-public class Patient extends Human{
+package model;
+
+public class Patient extends Human {
     String note;
 
 

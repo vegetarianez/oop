@@ -1,3 +1,5 @@
+package model;
+
 public class Drug implements Interface{
     String nameOfDrug;
     int milligrames;
